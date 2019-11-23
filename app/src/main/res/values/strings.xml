@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Daily Expense</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="expense_type">
+        <item>Select Your Expense</item>
+        <item>Transport</item>
+        <item>Lunch</item>
+        <item>Shopping</item>
+        <item>Bill</item>
+        <item>Breakfast</item>
+        <item>Medical</item>
+        <item>Dinner</item>
+        <item>Others</item>
+    </string-array>
+</resources>

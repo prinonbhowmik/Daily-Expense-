@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DashboardFragment">
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerId"
+        android:hint="Enter Your Expense Type"
+        android:layout_margin="20dp"
+        android:elevation="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/fromdateId"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="From Date"
+            android:textColor="#06598F"
+            android:drawableRight="@drawable/ic_date_range_black_24dp"
+            android:textAlignment="center"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:id="@+id/todateId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="0.5"
+            android:drawableRight="@drawable/ic_date_range_black_24dp"
+            android:text="To Date"
+            android:textAlignment="center"
+            android:textColor="#06598F" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Expense"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_gravity="center"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:id="@+id/showexpBtn"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_attach_money_black_24dp"
+            android:padding="20dp" />
+        <TextView
+            android:id="@+id/totalexpenseId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BDT 0000.00"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+    </LinearLayout>
+
+
+</LinearLayout>
