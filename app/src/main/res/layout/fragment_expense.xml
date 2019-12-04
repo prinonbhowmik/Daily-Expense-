@@ -68,11 +68,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="60dp"
-        app:fabSize="mini"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="23dp"
         android:background="@drawable/custom_button"
-        android:src="@drawable/ic_add_black_24dp" />
+        android:src="@drawable/ic_add_black_24dp"
+        app:fabSize="mini" />
 
 
 </RelativeLayout>

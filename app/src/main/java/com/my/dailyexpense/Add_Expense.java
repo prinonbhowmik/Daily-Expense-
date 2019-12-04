@@ -11,6 +11,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.text.TextUtils;
 import android.util.Base64;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -92,22 +93,21 @@ public class Add_Expense extends AppCompatActivity {
        addexpBtn.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
+               String exp_type = addexptypeId.getText().toString();
+               String amount =  addamount.getText().toString();
+               String date = adddate.getText().toString();
+               String time = addtime.getText().toString();
 
-               if (addexptypeId==null){
+               if (TextUtils.isEmpty(exp_type)){
                    Toast.makeText(Add_Expense.this,"Please Enter Expense Type",Toast.LENGTH_LONG);
                }
-             else if (addamount==null){
+             else if (TextUtils.isEmpty(amount)){
                  Toast.makeText(Add_Expense.this, "Please enter amount", Toast.LENGTH_SHORT).show();
              }
-             else if (adddate==null) {
+             else if (TextUtils.isEmpty(date)) {
                  Toast.makeText(Add_Expense.this, "Please enter date", Toast.LENGTH_SHORT).show();
              }
              else{
-                 String exp_type = addexptypeId.getText().toString();
-                 String amount =  addamount.getText().toString();
-                 String date = adddate.getText().toString();
-                 String time = addtime.getText().toString();
-
                  long id = helper.insertData(exp_type,date,time,amount,imagestring);
                  Toast.makeText(Add_Expense.this, "Data added & id "+id, Toast.LENGTH_SHORT).show();
              }
